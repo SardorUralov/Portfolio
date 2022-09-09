@@ -1,0 +1,50 @@
+@mixin text ($fonts, $style, $weight, $size, $height, $color) {
+
+    font-family: $fonts;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+    color: $color; 
+}
+
+@mixin button {
+    width: 200px;
+    height: 48px;
+    padding: 17px 25px 17px 75px;
+    background-color: $blue2;
+    background-image: url("../images/button-img.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    border: none;   
+    cursor: pointer;
+}
+
+
+@mixin intro-btn {
+    width: 202px;
+    height: 48px;
+    padding: 15px 20px 17px 32px;
+    text-transform: uppercase; 
+    color: #33323D;
+    border: 2px solid #33323D;
+    cursor: pointer;
+}
+
+
+@mixin form-btn {
+    width: 202px;
+    height: 48px;
+    padding: 15px 20px 17px 32px;
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    background-color: $blue3;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    color: $white;
+    border: none;
+    cursor: pointer;
+}

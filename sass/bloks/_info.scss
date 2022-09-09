@@ -1,0 +1,64 @@
+.info-item {
+    margin-top: 40px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-top: 2px solid $blue3;
+    border-bottom: 2px solid $blue3;
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    &__title {
+        margin: 0;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        @include text ('Ibbara Real Nova', normal, 700, 40px, 42px, $blue3);
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 24px;
+        @include text ('Public Sans', normal, 400, 15px, 30px, $blue3);
+    }
+
+    &__linker {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    &__link {
+        padding-left: 15px;
+    }
+
+    &__link:first-child {
+        padding-left: 0;
+    }
+}  
+
+@media screen and ( min-width: 1280px ) {
+    
+    .info-item {
+        display: flex;
+        flex-direction: row;
+
+        &__title {
+            margin: 0;
+            margin-top: 48px;
+        }
+    
+        &__text {
+            margin-top: 48px;
+        }
+
+        &__bottom {
+            width: 600px;
+            margin-left: 180px;
+        }
+    }
+}

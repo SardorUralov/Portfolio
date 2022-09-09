@@ -1,0 +1,104 @@
+.main-item {
+    min-width: 311px;
+    min-height: 271px;
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    background-image: url("../images/mobile-first-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+    &__img {
+        width: 311px;
+        height: 271px;
+    }
+
+    &__list {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        padding-top: 24px;
+        padding-bottom: 76px;
+    }
+
+    &__title {
+        margin: 0;
+        padding-bottom: 32px;
+        @include text ('Ibbara Real Nova', normal, 700, 40px, 42px, $blue3);
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__button {
+        @include button;
+    }
+
+    &__btn-link {
+        text-decoration: none;
+        @include text ('Public Sans', normal, 400, 12px, 14px, $white);
+    }
+}
+
+@media screen and ( min-width: 768px) {
+    .main-item {
+        margin-top: 47px;
+        margin-bottom: 95px;
+        min-width: 640px;
+        min-height: 600px;
+        background-image: url("../images/table-second-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__list {
+            position: absolute;
+            top: 325px;
+            right: 20%;
+            width: 514px;
+            height: 278px;
+            padding-top: 56px;
+            padding-right: 56px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: $white2;
+        }
+    }
+}
+
+@media screen and ( min-width: 1280px) {
+    .main-item {
+        margin-top: 60pxpx;
+        margin-bottom: 95px;
+        min-width: 1050px;
+        min-height: 600px;
+        background-image: url("../images/desktop-background.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__list {
+            position: absolute;
+            top: 244px;
+            right: 20%;
+            width: 445px;
+            height: 357px;
+            padding-top: 56px;
+            padding-right: 56px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: $white2;
+        }
+
+        &__title {
+            margin: 0;
+            padding-bottom: 32px;
+            @include text ('Ibbara Real Nova', normal, 700, 50px, 50px, $blue3);
+            display: flex;
+            align-items: flex-start;
+        }
+    }
+}
